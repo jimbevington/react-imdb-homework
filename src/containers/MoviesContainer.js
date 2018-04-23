@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MoviesList from '../components/MoviesList.js';
+import GetShowtimes from '../components/GetShowtimes.js';
 
 class MoviesContainer extends Component {
   constructor(props){
@@ -23,7 +24,8 @@ class MoviesContainer extends Component {
     return (
       <div classname='movies-container'>
         <h1>UK Opening This Week:</h1>
-        <MoviesList className='movies-list' data={this.state.data}/>
+        <MoviesList data={this.state.data}/>
+        <GetShowtimes data={this.state.data}/>
       </div>
     )
   }
