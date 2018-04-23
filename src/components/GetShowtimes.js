@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // has access to all Movies details via this.props.data
 
-class GetShowtimes extends Component {
-  render(){
-    return <button className='get-showtimes'>Get Showtimes</button>
-  }
-}
+const GetShowtimes = (props) =>
+  <button className='get-showtimes'>Get Showtimes</button>
 
 export default GetShowtimes;
