@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import MovieListing from './MovieListing.js'
 
 class MoviesList extends Component {
 
   render(){
-    return <div className="movies-list">This is a MoviesList</div>
+    const movieListings = this.props.data.map(movie => {
+      return (
+        <MovieListing title={movie.title}/>
+      );
+    });
+    return <div className="movies-list">{movieListings}</div>
   }
 
 }
