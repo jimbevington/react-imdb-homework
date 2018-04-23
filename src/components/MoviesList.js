@@ -14,5 +14,4 @@ class MoviesList extends Component {
 
 }
 
-
 export default MoviesList;

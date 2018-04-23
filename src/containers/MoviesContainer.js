@@ -21,7 +21,10 @@ class MoviesContainer extends Component {
 
   render(){
     return (
-      <MoviesList className='movies-list' data={this.state.data}/>
+      <div classname='movies-container'>
+        <h1>UK Opening This Week:</h1>
+        <MoviesList className='movies-list' data={this.state.data}/>
+      </div>
     )
   }
 }
