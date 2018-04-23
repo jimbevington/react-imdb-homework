@@ -1,28 +1,52 @@
-.App {
-  text-align: center;
+
+h1 {
+  font-size: 1.3em;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h4 {
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.movies-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 400px;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: solid lightgrey 2px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.movies-list {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 60%;
+  color: blue;
+}
+
+.movie-listing {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get-movie-showtimes {
+  border: none;
+  color: blue;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.get-showtimes {
+  background-color: blue;
   color: white;
-}
+  font-size: 1.2em;
+  height: 2em;
+  width: 60%;
+  margin: 15px;
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
