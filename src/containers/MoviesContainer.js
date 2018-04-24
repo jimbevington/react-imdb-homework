@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Heading from '../components/Heading.js';
 import MoviesList from '../components/MoviesList.js';
 import GetShowtimes from '../components/GetShowtimes.js';
 
@@ -22,8 +23,8 @@ class MoviesContainer extends Component {
 
   render(){
     return (
-      <div className='movies-container'>
-        <h1>UK Opening This Week:</h1>
+      <div className="movies-container">
+        <Heading />
         <MoviesList data={this.state.data}/>
         <GetShowtimes data={this.state.data}/>
       </div>

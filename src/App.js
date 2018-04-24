@@ -5,7 +5,7 @@ import MoviesContainer from './containers/MoviesContainer.js';
 class App extends Component {
   render() {
     return (
-      <MoviesContainer/>
+      <MoviesContainer />
     );
   }
 }
